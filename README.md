@@ -7,6 +7,12 @@ npm i
 npm run dev
 ```
 
+- **main.js** 는 Svelte의 시작점
+- **.svelte** 확장자가 붙은 파일이 컴포넌트
+- **/public** 에는 Svelte가 수행한 컴파일 결과
+- **/src** 는 모든 사용자 정의 Svelte 코드를 저장
+- **rollup.config.js** 모듈번들러 설정파일
+
 🇰🇷
 
 *공유 가능한 컴포넌트 템플릿을 찾고 있나요? 여기 참조! --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
