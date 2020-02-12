@@ -1,3 +1,12 @@
+
+# svelte app setting
+```
+npx degit sveltejs/template my-svelte-project
+cd my-svelte-project
+npm i
+npm run dev
+```
+
 🇰🇷
 
 *공유 가능한 컴포넌트 템플릿을 찾고 있나요? 여기 참조! --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
