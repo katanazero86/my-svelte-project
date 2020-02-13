@@ -13,6 +13,28 @@ npm run dev
 - **/src** 는 모든 사용자 정의 Svelte 코드를 저장
 - **rollup.config.js** 모듈번들러 설정파일
 
+
+### component format(*.svelte)
+
+```
+<script>
+	// logic goes here
+</script>
+
+<style>
+	/* styles go here */
+</style>
+
+<!-- markup (zero or more items) goes here -->
+
+
+export 키워드를 사용하여 변수 선언을 특성 또는 prop 로 표시
+
+on: 지시어를 사용하여 DOM 이벤트를 수신한다.
+on:eventname={handler}
+
+```
+
 🇰🇷
 
 *공유 가능한 컴포넌트 템플릿을 찾고 있나요? 여기 참조! --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*

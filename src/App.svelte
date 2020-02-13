@@ -1,10 +1,35 @@
 <script>
 	export let name;
+
+
+	// tutorial
+	export let bar = 'optional default value';
+	export const hello = 'hello svelte world!';
+	
+	export const format = n => n.toFixed(2);
+
+	export function test(name) {
+		alert(`hello ${name}!`);
+		return '';
+	}
+	
+	let num = 0;
+	const increaseNum = () => num++;
+
 </script>
 
 <main>
 	<h1>Hello {name}!</h1>
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+
+	<hr>
+	<p>{hello}</p>
+	<p>{bar}</p>
+	<p>{format(3.5555)}</p>
+	{test('스벨트')}
+
+	<button on:click={increaseNum}>값 증가 시키기</button>
+	<h3>{num}</h3>
 </main>
 
 <style>
