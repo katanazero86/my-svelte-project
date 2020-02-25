@@ -1,6 +1,10 @@
 <script>
-	export let name;
 
+    import Arithmetic from './example/Arithmetic.svelte';
+
+    let inputText = '';
+
+	export let name;
 
 	// tutorial
 	export let bar = 'optional default value';
@@ -30,7 +34,15 @@
 
 	<button on:click={increaseNum}>값 증가 시키기</button>
 	<h3>{num}</h3>
+	<input type="text" bind:value="{inputText}">
+    <div>
+     {inputText}
+    </div>
 </main>
+<hr>
+<div>
+    <Arithmetic/>
+</div>
 
 <style>
 	main {
