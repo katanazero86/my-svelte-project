@@ -1,22 +1,27 @@
 <script>
 
-    import Arithmetic from './example/Arithmetic.svelte';
+	// import component
+	import Arithmetic from './example/Arithmetic.svelte';
+	import Simple from "./example/Simple.svelte";
+	import BindGroup from "./example/BindGroup.svelte";
+	import BindThis from "./example/BindThis.svelte";
+	import IfStatement from "./example/IfStatement.svelte";
 
-    let inputText = '';
+	let inputText = '';
 
 	export let name;
 
 	// tutorial
 	export let bar = 'optional default value';
 	export const hello = 'hello svelte world!';
-	
+
 	export const format = n => n.toFixed(2);
 
 	export function test(name) {
 		alert(`hello ${name}!`);
 		return '';
 	}
-	
+
 	let num = 0;
 	const increaseNum = () => num++;
 
@@ -40,9 +45,26 @@
     </div>
 </main>
 <hr>
-<div>
+<div class="example-wrap">
     <Arithmetic/>
 </div>
+<hr>
+<div class="example-wrap">
+	<Simple/>
+</div>
+<hr>
+<div class="example-wrap">
+	<BindGroup/>
+</div>
+<hr>
+<div class="example-wrap">
+	<BindThis/>
+</div>
+<hr>
+<div class="example-wrap">
+	<IfStatement/>
+</div>
+
 
 <style>
 	main {
@@ -59,9 +81,15 @@
 		font-weight: 100;
 	}
 
+	.example-wrap {
+		border: 1px dotted cadetblue;
+		padding: 8px;
+	}
+
 	@media (min-width: 640px) {
 		main {
 			max-width: none;
 		}
 	}
+
 </style>

@@ -63,6 +63,7 @@ export 키워드를 사용하여 변수 선언을 특성 또는 prop 로 표시
 
 on : DOM 이벤트를 수신한다.
 on:eventname={handler}
+on:eventname|modifiers={handler}
 
 bind : 양방향 바인딩(업데이트된 값을 변경 및 입력된 값도 업데이트)
 bind:property={variable}
