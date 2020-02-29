@@ -1,5 +1,36 @@
 
-# svelte app setting
+
+## Svelte is a radical new approach to building user interfaces
+
+- 스벨트는 사용자 인터페이스를 구축하는 근본적인 새로운 접근방식
+- React 및 Vue 같은 JavaScript 프레임워크와 유사
+- 왜 유사한가? 스벨트는 컴파일러라고 자기를 소개한다. <br>
+```(컴파일러는 번역기다. 스벨트는 이런 컴파일 역할을 하여 효율적인 javascript 코드로 변환)``` 
+- 스벨트는 빌드시, 모든 코드를 효율적인 javascript 로 변환
+```(가상돔을 사용하지 않는다. + react, vue 처럼 npm 의존성(vue, react, react-dom)이 존재하지 않는다)```
+- 가상돔과 npm 의존성(코어 라이브러리)을 없애고 런타임(실행환경)에 코드를 해석하지 않는다.
+
+
+```
+"dependencies": {
+    "sirv-cli": "^0.4.4"
+},
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.0.0",
+    "@rollup/plugin-node-resolve": "^7.0.0",
+    "rollup": "^1.20.0",
+    "rollup-plugin-livereload": "^1.0.0",
+    "rollup-plugin-svelte": "^5.0.3",
+    "rollup-plugin-terser": "^5.1.2",
+    "svelte": "^3.0.0"
+}
+
+- svelte는 기본적으로 컴파일러이기 때문에, 런타임에 svelte 관련 라이브러리를 불러오거나 의존성이 존재하지 않음.
+
+```
+
+
+## svelte app setting
 ```
 npx degit sveltejs/template my-svelte-project
 cd my-svelte-project
