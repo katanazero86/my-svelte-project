@@ -6,6 +6,7 @@
 	import BindGroup from "./example/BindGroup.svelte";
 	import BindThis from "./example/BindThis.svelte";
 	import IfStatement from "./example/IfStatement.svelte";
+	import PropsExample from "./example/PropsExample.svelte";
 
 	let inputText = '';
 
@@ -24,6 +25,11 @@
 
 	let num = 0;
 	const increaseNum = () => num++;
+
+	let person = {
+		name : 'nameProp',
+		age : 100
+	}
 
 </script>
 
@@ -63,6 +69,10 @@
 <hr>
 <div class="example-wrap">
 	<IfStatement/>
+</div>
+<hr>
+<div class="example-wrap">
+	<PropsExample name="{person.name}" age="{person.age}" readOnly="zzzz"/>
 </div>
 
 
