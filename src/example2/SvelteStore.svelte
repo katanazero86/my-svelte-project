@@ -1,5 +1,5 @@
 <script>
-    import {storeNum} from '../store/store.js';
+    import {storeNum, storeNum2} from '../store/store.js';
     import {get} from 'svelte/store';
 
     const storeNumSet = (value = 1, event) => {
@@ -17,6 +17,18 @@
       storeNumTemp = get(storeNum);
     };
 
+
+    const noWatchStoreNum = storeNum2.subscribe((value) => {
+        // got a subscriber!! print
+       console.log(value); // 100 &&
+    });
+
+    const noWatchStoreNum2 = storeNum2.subscribe((value) => {
+        console.log(value); // 100
+    });
+
+    noWatchStoreNum2();
+    noWatchStoreNum();
 
 </script>
 
