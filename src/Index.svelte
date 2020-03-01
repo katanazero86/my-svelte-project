@@ -1,6 +1,7 @@
 <script>
 
     import { storeNum, storeString } from './store/store.js';
+    import {fade} from 'svelte/transition'
 
     // import component
     import Arithmetic from './example/Arithmetic.svelte';
