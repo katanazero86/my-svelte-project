@@ -18,7 +18,7 @@
     </div>
 </div>
 
-<style>
+<style type="text/scss">
 
     .header-wrap {
         display: flex;
@@ -33,30 +33,33 @@
         height: 48px;
         background-color: #1abc9c;
         z-index: 1;
+
+        .header-body {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .header-body-item {
+            font-size: 15px;
+            font-weight: 700;
+            padding: 0 6px;
+            cursor: pointer;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            margin: -6px 0;
+        }
+
+        .header-body-item:hover {
+            background-color: #159d82;
+        }
+
     }
 
 
-    .header-body {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-    }
 
-    .header-body-item {
-        font-size: 15px;
-        font-weight: 700;
-        padding: 0 6px;
-        cursor: pointer;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        margin: -6px 0;
-    }
-
-    .header-body-item:hover {
-        background-color: #159d82;
-    }
 
 </style>

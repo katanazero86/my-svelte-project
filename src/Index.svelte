@@ -1,6 +1,6 @@
 <script>
 
-    import {fade} from 'svelte/transition'
+    import { storeNum, storeString } from './store/store.js';
 
     // import component
     import Arithmetic from './example/Arithmetic.svelte';
@@ -9,6 +9,7 @@
     import BindThis from "./example/BindThis.svelte";
     import IfStatement from "./example/IfStatement.svelte";
     import PropsExample from "./example/PropsExample.svelte";
+    import SvelteStore from "./example2/SvelteStore.svelte";
 
     let inputText = '';
 
@@ -30,9 +31,22 @@
     const increaseNum = () => num++;
 
     let person = {
-        name : 'nameProp',
-        age : 100
+        name: 'nameProp',
+        age: 100
     }
+
+
+    let storeNumValue = 0;
+    let storeStringValue = null;
+
+    storeNum.subscribe(value => {
+        storeNumValue = value;
+    });
+
+    storeString.subscribe(value => {
+        storeStringValue = value;
+    });
+
 
 </script>
 
@@ -76,6 +90,15 @@
 <hr>
 <div class="example-wrap">
     <PropsExample name="{person.name}" age="{person.age}" />
+</div>
+<div class="example-wrap">
+    <p>
+        index 컴포넌트에서 스토어 값 출력
+    </p>
+    {`storeNumValue : ${storeNumValue}`}<br>
+    {`storeStringValue : ${storeStringValue}`}<br>
+    <hr>
+    <SvelteStore/>
 </div>
 
 
