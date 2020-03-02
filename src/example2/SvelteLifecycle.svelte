@@ -35,15 +35,15 @@
 
     // tick
 
-    function updateValue() {
-        $updatedValue++;
-    }
+    // function updateValue() {
+    //     $updatedValue++;
+    // }
 
 
 </script>
 
 <div>
-    <button on:click={() => updateValue()}>
+    <button on:click={() => $updatedValue++}>
         {$updatedValue}
     </button>
 </div>
