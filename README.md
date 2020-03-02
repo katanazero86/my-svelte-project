@@ -70,9 +70,9 @@ bind:property={variable}
 
 ```
 
+--- 
+
 ❤ [생명주기 정리](https://velog.io/@katanazero86/svelte-life-cycle-%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0) 
-
-
 
 --- 
 
