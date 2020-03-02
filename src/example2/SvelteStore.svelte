@@ -1,5 +1,5 @@
 <script>
-    import {storeNum, storeNum2} from '../store/store.js';
+    import {storeNum, storeNum2, storeNum3, derivedStateNumDouble, derivedStateNumDouble2, derivedStateNum} from '../store/store.js';
     import {get} from 'svelte/store';
 
     const storeNumSet = (value = 1, event) => {
@@ -17,7 +17,6 @@
       storeNumTemp = get(storeNum);
     };
 
-
     const noWatchStoreNum = storeNum2.subscribe((value) => {
         // got a subscriber!! print
        console.log(value); // 100 &&
@@ -29,6 +28,11 @@
 
     noWatchStoreNum2();
     noWatchStoreNum();
+
+    // 해당 파생 상태값은 함수를 반환
+    derivedStateNum.subscribe(callback => {
+        callback();
+    });
 
 </script>
 
@@ -47,6 +51,13 @@
             getStoreNum
         </button>
         get : {storeNumTemp}
+    </p>
+
+    <p>
+        storeNum3 : <input type="text" bind:value={$storeNum3}> <br>
+        derivedState : {$derivedStateNumDouble} <br>
+        derivedState2 : {$derivedStateNumDouble2} <br>
+        개발자 도구를 켜서, 콘솔창을 살펴보시오!
     </p>
 </div>
 
