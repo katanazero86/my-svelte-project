@@ -33,12 +33,6 @@
         console.log('parent onDestroy..');
     });
 
-    // tick
-
-    // function updateValue() {
-    //     $updatedValue++;
-    // }
-
 
 </script>
 
