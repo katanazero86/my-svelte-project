@@ -1,6 +1,6 @@
 <script>
 
-    import { storeNum, storeString } from './store/store.js';
+    import {storeNum, storeString} from './store/store.js';
     import {fade} from 'svelte/transition'
 
     // import component
@@ -11,6 +11,7 @@
     import IfStatement from "./example/IfStatement.svelte";
     import PropsExample from "./example/PropsExample.svelte";
     import SvelteStore from "./example2/SvelteStore.svelte";
+    import SvelteLifecycle from "./example2/SvelteLifecycle.svelte";
 
     let inputText = '';
 
@@ -100,6 +101,9 @@
     {`storeStringValue : ${storeStringValue}`}<br>
     <hr>
     <SvelteStore/>
+</div>
+<div class="example-wrap">
+    <SvelteLifecycle/>
 </div>
 
 

@@ -36,6 +36,8 @@ export const derivedStateNum = derived(storeNum3, ($storeNum3, set) => {
     });
 });
 
+export const updatedValue = writable(2222);
+
 // storeNum.subscribe(num => {
 //     console.log(num); // 0
 // });
