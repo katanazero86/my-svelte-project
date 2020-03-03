@@ -12,6 +12,9 @@
         <div class="header-body-item" on:click={() => push('/route-params/1000?name=test')}>
             Router params example
         </div>
+        <div class="header-body-item" on:click={() => push('/transition')}>
+            transition example
+        </div>
     </div>
 </div>
 
