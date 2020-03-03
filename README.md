@@ -73,6 +73,7 @@ bind:property={variable}
 --- 
 
 ❤ [생명주기 정리](https://velog.io/@katanazero86/svelte-life-cycle-%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0) 
+❤ [스토어 정리](https://velog.io/@katanazero86/svelte-store#%EC%9D%B4%EC%A0%9C-%EC%8A%A4%ED%86%A0%EC%96%B4-%EC%83%81%ED%83%9C%EA%B0%9D%EC%B2%B4-%EA%B0%92%EC%9D%84-%EC%B0%B8%EC%A1%B0%ED%95%B4%EB%B3%B4%EC%9E%90)
 
 --- 
 
